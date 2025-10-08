@@ -1,0 +1,173 @@
+<html>
+<head>
+  <title>Formular Aplikimi për Makinë me Qera</title>
+  <style>
+
+    .form-container {
+      background-color: #fefefe;
+      border: 2px solid #e60909;
+      border-radius: 8px;
+      padding: 30px;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-left: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e60909;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 18px;
+      color: #e60909;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #e60909;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #e60909;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #b20505;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group .input-label {
+      margin-bottom: 5px;
+    }
+
+    .form-group select {
+      width: 100%;
+    }
+
+    .gender-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gender-group label {
+      margin-right: 20px;
+    }
+
+    .gender-group input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Formular Aplikimi</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name" class="input-label">Emri:</label>
+        <input type="text" id="name" name="name" required placeholder="Shkruani emrin tuaj">
+      </div>
+
+      <div class="form-group">
+        <label for="last-name" class="input-label">Mbiemri:</label>
+        <input type="text" id="last-name" name="last-name" required placeholder="Shkruani mbiemrin tuaj">
+      </div>
+
+      <div class="form-group">
+        <label for="age" class="input-label">Mosha:</label>
+        <input type="number" id="age" name="age" required placeholder="Shkruani moshen tuaj" min="18">
+      </div>
+
+      <div class="form-group">
+        <label for="id" class="input-label">Numri i ID-së:</label>
+        <input type="text" id="id" name="id" required placeholder="Shkruani numrin e ID-së tuaj">
+      </div>
+
+      <div class="form-group">
+        <label for="zip" class="input-label">Kodi Postar:</label>
+        <input type="text" id="zip" name="zip" required placeholder="Shkruani kodin postar">
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="input-label">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Shkruani email-in tuaj">
+      </div>
+
+      <div class="form-group">
+        <label for="city" class="input-label">Qyteti:</label>
+        <input type="text" id="city" name="city" required placeholder="Shkruani qytetin tuaj">
+      </div>
+
+      <div class="form-group">
+        <label for="car-maker" class="input-label">Zgjidhni Markën e Makinës:</label>
+        <select id="carMaker" name="carMaker">
+            <option value="toyota">
+              Toyota
+            </option>
+            <option value="bmw">
+               BMW
+            </option>
+            <option value="benz">
+               Benz
+            </option>
+            <option value="audi">
+              Audi
+            </option>
+            <option value="porsche">
+               Porsche
+            </option>
+            <option value="hyundai">
+               Hyundai
+            </option>
+            <option value="subaru">
+               Subaru
+            </option>
+            <option value="nissan">
+               Nissan
+            </option>
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label for="car-model" class="input-label">Shkruani Modelin e Makinës:</label>
+        <input type="text" id="car-model" name="car-model" required placeholder="Shkruani modelin e makinës">
+      </div>
+
+      <div class="form-group gender-group">
+        <div>
+          <label for="gender-male" class="input-label">Mashkull</label>
+          <input type="radio" id="gender-male" name="gender" value="male" required>
+        </div>
+        <div>
+          <label for="gender-female" class="input-label">Femer</label>
+          <input type="radio" id="gender-female" name="gender" value="female" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Apliko Tani">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
+
